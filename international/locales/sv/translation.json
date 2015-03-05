@@ -1,0 +1,10 @@
+{
+  "lang": {
+    "type": "Svenska va fan"
+  },
+   "message": {
+  	"welcome": "Välkommen",
+  	"favorites": "Favoriter",
+  	"keyboard": "Tangentbord"
+  }
+}

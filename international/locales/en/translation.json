@@ -1,0 +1,12 @@
+{
+  "lang": {
+    "type": "English lol"
+  },
+
+  "message": {
+  	"welcome": "Welcome!",
+  	"favorites": "Favorites",
+  	"keyboard": "Keyboard"
+  }
+
+}
