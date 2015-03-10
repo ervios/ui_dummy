@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Filter test</title>
+		<link rel="stylesheet" href="css/css.css">
+	</head>
+
+	<body>
+
+		<div id="div_example">
+            Using "divs" you seperate content on a page and use it with an "id" you <br>
+            can specifically change it in the CSS file.<br>
+            <input id="button_example" type="button" value="IAMTHETEXTONTHEBUTTON Click me!!" onclick="annoyingPopup();" />
+        </div>
+
+		<p id="demo"></p>
+		<p id="demo2"></p>
+		<p id="demo3"></p>
+
+
+        <!<input id="ol_example" type="button" value="Show beers" onclick="annoyingPopup();" />  
+
+        <button class="" type="submit" onclick="stringSearch();">Search for beer</button>
+        <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"> <br>
+        <div class="">
+			<div id="search_options" class="button_options">
+				<input id="search_default" type="radio" name="alcohol" onclick="stringSearch()" value="default" checked="true">Show all beers<br>
+				<p id="search_p">Sort By:</p>
+				<input id="search_alcohol" type="radio" name="alcohol" onclick="stringSearch()" value="alcohol">Alcohol<br>
+				<input id="search_price" type="radio" name="alcohol" onclick="stringSearch()" value="price">Price
+			</div>
+			<div id="alcohol_options" class="button_options" style="display:none;">
+				<input id="zeroPointZero" type="radio" name="alcohol_spec" onclick="stringSearch()" value="0030" checked="true">0% - 3.0%<br>
+				<input id="threePointOne" type="radio" name="alcohol_spec" onclick="stringSearch()" value="1165">3.1% - 6.5%<br>
+				<input id="sixPointFive" type="radio" name="alcohol_spec" onclick="stringSearch()" value="6565">6.5%+
+			</div>
+			<div id="price_options" class="button_options" style="display:none;">
+				<input id="lessThan16" type="radio" name="price_spec" onclick="stringSearch()" value="price_0to15" checked="true">Price < 16<br>
+				<input id="16to30" type="radio" name="price_spec" onclick="stringSearch()" value="price_16to30">Price: 16 - 29.99<br>
+				<input id="moreThan30" type="radio" name="price_spec" onclick="stringSearch()" value="price_moreThan30">Price >= 30
+			</div>
+		</div>
+
+
+	</body>
+	<script src="js/javascript_file.js"></script>
+
+</html>

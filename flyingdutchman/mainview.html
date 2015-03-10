@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+    <title>The Flying Dutchman</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/mainview.css" />
+    <script src="js/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="js/database_functions.js"></script>
+    <script src="js/i18next/i18next-1.7.7.min.js"></script>
+    <script src="js/internationalization.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/generate_beverage.js"></script>
+    <script src="js/logout_timer.js"></script>
+    <script src="js/user_management.js"></script>
+    <!--<script type= "text/javascript" src="js/filter_beverage.js"></script>-->
+    
+</head>
+
+<body onload="welcomeMessage(); getUserCredit(); setLogoutTimer();//createBeerView(); ">
+	<div class="background-image"></div>
+
+	<div class="top-to-bottom" id="container">
+
+		<div id="header">
+			<div id="logo">The Flying<br>Dutchman</div>
+            <div id="welcome-message" class="message" data-i18n="message.welcome"></div><div id="fname">,</div>
+            
+			<input type="image" id="logout-button" src="images/logout_button.svg" onclick="logout();">
+			<input type="image" id="profile-button" src="images/profile1.png" onclick="userManagement();">
+			<input type="image" id="language-button" src="images/sv-flag.png" value="sv">
+			<div id="credit"><img src="images/credit1.png"></div>
+		</div>
+
+		<div class="border_view" id="middle_section">
+			<div class="border_view" id="left_side_content">
+				<p>LEFT LEFT LEFT </p>
+			</div>
+
+			<div class="border_view" id="middle_content">
+
+				<div id="midcontainer" class="bottom-to-top"> 
+					<div id="favorites-headline">
+					 <div id="favorites-message" class="message" data-i18n="message.favorites"></div>
+						</div>
+						<div id="hide-show-btn"><button id="hide-show" value="Hide">Hide</button></div>
+		            <div id ="favbeers" class="top-to-bottom" ondrop="drop(event)" ondragover="allowDrop(event)">
+		            	
+		        	</div>
+		            <div id="beverages-headline" class="message" data-i18n="message.beverages"></div>
+		            <div id ="beerblock" class="inner"></div>
+		        </div>
+			</div>
+			<div class="border_view" id="right_side_content">
+				<p>RIGHT RIGHT RIGHT </p>
+			</div>
+		</div>
+
+
+		<!--<div id="footer">footer</div>-->
+
+	</div>
+</body>
+</html>

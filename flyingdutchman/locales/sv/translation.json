@@ -1,0 +1,17 @@
+{
+  "lang": {
+    "type": "Svenska"
+  },
+  "message": {
+  	"welcome": "Välkommen",
+  	"favorites": "Dina Favoriter",
+  	"beverages": "Drycker"
+  },
+  "settings": {
+  	"user_management": "Användarhantering",
+  	"add_user": "Lägg till ny användare",
+  	"names": "Namn",
+  	"contact": "Kontaktinformation",
+  	"login_credentials": "Login-uppgifter"
+  }
+}

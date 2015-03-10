@@ -1,0 +1,18 @@
+{
+  "lang": {
+    "type": "English"
+  },
+  "message": {
+  	"welcome": "Welcome",
+  	"favorites": "Your Favourites",
+  	"beverages": "Beverages"
+  },
+  "settings": {
+  	"usermanagement": "User Management",
+  	"add_user": "Add New User",
+  	"names": "Names",
+  	"contact": "Contact Info",
+  	"login_credentials": "Login Credentials"
+  }
+
+}

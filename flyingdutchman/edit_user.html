@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+    <title>The Flying Dutchman</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/mainview.css" />
+    <script src="js/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="js/database_functions.js"></script>
+    <script src="js/i18next/i18next-1.7.7.min.js"></script>
+    <script src="js/internationalization.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/generate_beverage.js"></script>
+    <script src="js/logout_timer.js"></script>
+    <script src="js/user_management.js"></script>
+    <!--<script type= "text/javascript" src="js/filter_beverage.js"></script>-->
+    
+</head>
+
+<body onload="welcomeMessage(); getUserCredit(); //setLogoutTimer();//createBeerView(); ">
+	<div class="background-image"></div>
+
+	<div class="top-to-bottom" id="container">
+
+		<div id="header">
+			<div id="logo">The Flying<br>Dutchman</div>
+            <div id="welcome-message" class="message" data-i18n="message.welcome"></div><div id="fname">,</div>
+            
+			<input type="image" id="logout-button" src="images/logout_button.svg" onclick="logout();">
+			<input type="image" id="profile-button" src="images/profile1.png" onclick="userManagement();">
+			<input type="image" id="language-button" src="images/sv-flag.png" value="sv">
+			<div id="credit"><img src="images/credit1.png"></div>
+		</div>
+
+		<div class="border_view" id="middle_section">
+			<div class="border_view" id="left_side_content">
+				
+			</div>
+
+			<div class="border_view" id="middle_content">
+
+				<div id="midcontainer" class="bottom-to-top"> 
+					<div id="settings-user-management" class="settings" data-i18n="settings.usermanagement">Edit User</div>
+					
+					<select>
+					  <option value="volvo">Volvo</option>
+					  <option value="saab">Saab</option>
+					  <option value="opel">Opel</option>
+					  <option value="audi">Audi</option>
+					</select>
+
+					<form id="form-add-user">
+						<center>
+							<div class="break-add-user">Names</div>
+							<input id="firstname" placeholder="First Name" type="text" name="fname"> <br>
+							<input id="lastname" placeholder="Last Name" type="text" name="lname"> <br> 
+							<div class="break-add-user">Contact Info</div>
+							<input id="email" placeholder="Email" type="text" name="email"> <br>
+							<input id="phone" placeholder="Phone" type="text" name="phone"> <br>
+							<div class="break-add-user">Login Credentials</div>
+							<input id="username" placeholder="User Name" type="text" name="uname"> <br> 
+							<input id="password" placeholder="Password" type="password" name="pass"> <br>
+							
+						</center>
+					</form>
+					<input type="button" id="button-cancel-add-user" onclick="window.location.href = 'user_management.html';" value="Cancel">
+					<input type="button" id="button-add-user" onclick="addNewUser();" value="Save User">
+		        </div>
+			</div>
+			<div class="border_view" id="right_side_content">
+				
+			</div>
+		</div>
+
+
+		<!--<div id="footer">footer</div>-->
+
+	</div>
+</body>
+</html>
